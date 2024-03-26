@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+.header {
+  text-align: center;
+  background-color: black;
+  color: red;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: Bangers;
+  letter-spacing: 0.5rem;
+}
+
+.calculator-container {
+  background-color: gray;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.calculator {
+  background-color: white;
+  text-align: center;
+  width: 24rem;
+  padding: 0;
+  border-radius: 1rem;
+  border: 1rem;
+}
+
+.buttons input {
+  height: 5rem;
+  width: 5rem;
+  margin: 0.2rem;
+}
+
+.buttons {
+  margin: 1rem;
+}
+
+#equalbutton {
+  width: 10.4rem;
+}
+
+#input {
+  height: 3rem;
+  width: 21rem;
+  margin-bottom: 1rem;
+}
+
+.display-container {
+  display: flex;
+  justify-content: center;
+}
+#display {
+  height: 3rem;
+  width: 21rem;
+  margin: 1rem;
+  font-size: 2.5rem;
+}
+
+.rowButtons {
+  display: flex;
+  justify-content: center;
+}
