@@ -11,7 +11,7 @@ export default function Calculator() {
         </div>
 
         <section className="buttons">
-          <div className="rowButtons">
+          <div className="rowButtons" id="firstRow">
             <Buttonitems
               value="AC"
               clickHandler={(e) => {
@@ -27,73 +27,89 @@ export default function Calculator() {
               clickHandler={(e) => setValue(value + e.target.value)}
             />
             <Buttonitems
+              identification="operand"
               value="/"
               clickHandler={(e) => setValue(value + e.target.value)}
             />
           </div>
           <div className="rowButtons">
             <Buttonitems
+              identification="numbers"
               value="7"
               clickHandler={(e) => setValue(value + e.target.value)}
             />
             <Buttonitems
+              identification="numbers"
               value="8"
               clickHandler={(e) => setValue(value + e.target.value)}
             />
             <Buttonitems
+              identification="numbers"
               value="9"
               clickHandler={(e) => setValue(value + e.target.value)}
             />
             <Buttonitems
-              value="-"
-              clickHandler={(e) => setValue(value + e.target.value)}
-            />
-          </div>
-          <div className="rowButtons">
-            <Buttonitems
-              value="4"
-              clickHandler={(e) => setValue(value + e.target.value)}
-            />
-            <Buttonitems
-              value="5"
-              clickHandler={(e) => setValue(value + e.target.value)}
-            />
-            <Buttonitems
-              value="6"
-              clickHandler={(e) => setValue(value + e.target.value)}
-            />
-            <Buttonitems
-              value="+"
-              clickHandler={(e) => setValue(value + e.target.value)}
-            />
-          </div>
-          <div className="rowButtons">
-            <Buttonitems
-              value="1"
-              clickHandler={(e) => setValue(value + e.target.value)}
-            />
-            <Buttonitems
-              value="2"
-              clickHandler={(e) => setValue(value + e.target.value)}
-            />
-            <Buttonitems
-              value="3"
-              clickHandler={(e) => setValue(value + e.target.value)}
-            />
-            <Buttonitems
+              identification="operand"
               value="*"
               clickHandler={(e) => setValue(value + e.target.value)}
             />
           </div>
           <div className="rowButtons">
             <Buttonitems
+              identification="numbers"
+              value="4"
+              clickHandler={(e) => setValue(value + e.target.value)}
+            />
+            <Buttonitems
+              identification="numbers"
+              value="5"
+              clickHandler={(e) => setValue(value + e.target.value)}
+            />
+            <Buttonitems
+              identification="numbers"
+              value="6"
+              clickHandler={(e) => setValue(value + e.target.value)}
+            />
+            <Buttonitems
+              identification="operand"
+              value="-"
+              clickHandler={(e) => setValue(value + e.target.value)}
+            />
+          </div>
+          <div className="rowButtons">
+            <Buttonitems
+              identification="numbers"
+              value="1"
+              clickHandler={(e) => setValue(value + e.target.value)}
+            />
+            <Buttonitems
+              identification="numbers"
+              value="2"
+              clickHandler={(e) => setValue(value + e.target.value)}
+            />
+            <Buttonitems
+              identification="numbers"
+              value="3"
+              clickHandler={(e) => setValue(value + e.target.value)}
+            />
+            <Buttonitems
+              identification="operand"
+              value="+"
+              clickHandler={(e) => setValue(value + e.target.value)}
+            />
+          </div>
+          <div className="rowButtons">
+            <Buttonitems
+              identification="numbers"
               value="00"
               clickHandler={(e) => setValue(value + e.target.value)}
             />
             <Buttonitems
+              identification="numbers"
               value="0"
               clickHandler={(e) => setValue(value + e.target.value)}
             />
+
             <Buttonitems
               identification="equalbutton"
               value="="
