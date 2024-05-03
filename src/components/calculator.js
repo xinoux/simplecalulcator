@@ -2,12 +2,16 @@ import { useState } from "react";
 import Buttonitems from "./button-item";
 export default function Calculator() {
   const [value, setValue] = useState("");
+  const [result, setResult] = useState("");
 
   return (
     <section className="calculator-container">
       <div className="calculator">
         <div id="display.container">
           <input id="display" type="text" value={value} />
+        </div>
+        <div id="display.container">
+          <input id="display" type="text" value={result} />
         </div>
 
         <section className="buttons">
@@ -16,6 +20,7 @@ export default function Calculator() {
               value="AC"
               clickHandler={(e) => {
                 setValue("");
+                setResult("");
               }}
             />
             <Buttonitems
@@ -113,7 +118,7 @@ export default function Calculator() {
             <Buttonitems
               identification="equalbutton"
               value="="
-              clickHandler={(e) => setValue((e) => setValue(eval(value)))}
+              clickHandler={(e) => setResult((e) => setResult(eval(value)))}
             />
           </div>
         </section>
